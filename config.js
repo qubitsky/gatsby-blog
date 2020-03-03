@@ -1,11 +1,11 @@
 module.exports = {
   /** Site MetaData (Required all)*/
-  title: `Dev.White`,                           // (* Required)
-  description: `Dev.White의 웹 개발 블로그입니다. 프론트엔드 스킬을 주로 다루며 백엔드와 그 외 기술에도 지속적으로 관심을 기울이고 있습니다.`, // (* Required)
-  author: `Junho Baik`,                         // (* Required)
-  siteUrl: 'https://junhobaik.github.io',       // (* Required) 
-    // ex.'https://junhobaik.github.io'
-    // ex.'https://junhobaik.github.io/' << X, Do not enter "/" at the end.
+  title: `苍微のblog`,                           // (* Required)
+  description: `苍微のblog是一位前端开发者的个人博客。面向互联网搬砖，记录知识、分享感悟！`, // (* Required)
+  author: `qubitsky`,                         // (* Required)
+  siteUrl: 'https://qubitsky.github.io',       // (* Required) 
+    // ex.'https://qubitsky.github.io'
+    // ex.'https://qubitsky.github.io/' << X, Do not enter "/" at the end.
 
   /** Header */
   profileImageFileName: 'profile.png', // include filename extension ex.'profile.jpg'
@@ -14,19 +14,19 @@ module.exports = {
 
   /** Home > Bio information*/
   comment: 'Jr. Web Front-end Developer. / javascript, react ...',
-  name: 'Junho Baik',
+  name: '苍微 qubitsky',
   company: '',
-  location: 'Korea',
-  email: 'junhobaik@gmail.com',
-  website: 'https://junhobaik.github.io',           // ex.'https://junhobaik.github.io'
+  location: '中国 china',
+  email: 'owlikesj@gmail.com',
+  website: 'https://qubitsky.github.io',           // ex.'https://qubitsky.github.io'
   linkedin: '',                                     // ex.'https://www.linkedin.com/in/junho-baik-16073a19ab'
   facebook: '',                                     // ex.'https://www.facebook.com/zuck' or 'https://www.facebook.com/profile.php?id=000000000000000'
-  instagram: 'https://www.instagram.com/junhobaik', // ex.'https://www.instagram.com/junhobaik'
-  github: 'https://github.com/junhobaik',           // ex.'https://github.com/junhobaik'
+  instagram: 'https://www.instagram.com/qubitsky', // ex.'https://www.instagram.com/qubitsky'
+  github: 'https://github.com/qubitsky',           // ex.'https://github.com/qubitsky'
 
   /** Post */
   enablePostOfContents: true,     // TableOfContents activation (Type of Value: Boolean. Not String)
-  disqusShortname: 'junhobaik',   // comments (Disqus sort-name)
+  disqusShortname: 'qubitsky',   // comments (Disqus sort-name)
   enableSocialShare: true,        // Social share icon activation (Type of Value: Boolean. Not String)
 
   /** Optional */
