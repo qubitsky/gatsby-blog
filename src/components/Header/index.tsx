@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { useColorMode } from 'theme-ui';
 
 import './header.scss';
-const config = require('../../../config');
+// const config = require('../../../config');
 
 export interface headerPropsType {
   siteTitle: string;
@@ -97,7 +97,7 @@ const Header = (props: headerPropsType) => {
   return (
     <header id="Header" className={`${isHide ? 'hide' : 'show'} ${isMobile ? 'mobile' : ''}`}>
       <div className="header-title">
-        <Link to="/">
+        {/* <Link to="/">
           <div className="header-profile-image-wrap">
             <img
               src={
@@ -110,7 +110,7 @@ const Header = (props: headerPropsType) => {
               height={size || '25px'}
             />
           </div>
-        </Link>
+        </Link> */}
 
         <Link to="/">
           <h1 className="header-title-text">{siteTitle}</h1>
