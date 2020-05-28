@@ -30,9 +30,9 @@ module.exports = {
   enableSocialShare: true,        // Social share icon activation (Type of Value: Boolean. Not String)
 
   /** Optional */
-  googleAnalytics: 'UA-103592668-4',                                  // Google Analytics TrackingID. ex.'UA-123456789-0'
+  googleAnalytics: 'UA-103068178-3',                                  // Google Analytics TrackingID. ex.'UA-123456789-0'
   googleSearchConsole: 'w-K42k14_I4ApiQKuVPbCRVV-GxlrqWxYoqO94KMbKo', // content value in HTML tag of google search console ownership verification 
   googleAdsenseSlot: '5214956675',                                    // Google Adsense Slot. ex.'5214956675'
-  googleAdsenseClient: 'ca-pub-5001380215831339',                     // Google Adsense Client. ex.'ca-pub-5001380215831339'
+  googleAdsenseClient: 'ca-pub-5084259386637852',                     // Google Adsense Client. ex.'ca-pub-5001380215831339'
     // Please correct the adsense client number(ex.5001380215831339) in the './static/ads.txt' file.
 };

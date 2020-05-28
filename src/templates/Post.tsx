@@ -7,7 +7,6 @@ import { DiscussionEmbed } from 'disqus-react';
 import moment from 'moment';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faListUl, faLayerGroup, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
-import AdSense from 'react-adsense';
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -54,11 +53,10 @@ const Post = (props: postProps) => {
   }
   const { enablePostOfContents, disqusShortname, enableSocialShare }: iConfig = config;
 
-  const [yList, setYList] = useState();
+  const [yList, setYList] = useState<number[]>();
   const [isInsideToc, setIsInsideToc] = useState(false);
 
   const isTableOfContents = enablePostOfContents && tableOfContents !== '';
-  const isDevelopment = process.env.NODE_ENV === 'development';
   const isDisqus: boolean = disqusShortname ? true : false;
   const isSocialShare = enableSocialShare;
 
@@ -73,7 +71,7 @@ const Post = (props: postProps) => {
 
     setYList(foo);
 
-    return () => {};
+    return () => { };
   }, []);
 
   useEffect(() => {
@@ -178,8 +176,8 @@ const Post = (props: postProps) => {
   },
   "headline": "${title}",
   ${
-    config.profileImageFileName
-      ? `"publisher": {
+            config.profileImageFileName
+              ? `"publisher": {
     "@type" : "organization",
     "name" : "${config.name}",
     "logo": {
@@ -188,12 +186,12 @@ const Post = (props: postProps) => {
     }
   },
   "image": ["${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"]`
-      : `"publisher": {
+              : `"publisher": {
     "@type" : "organization",
     "name" : "${config.name}"
   },
   "image": []`
-  }
+            }
 }
 `}
         </script>
@@ -296,38 +294,11 @@ const Post = (props: postProps) => {
             </div>
           ) : null}
 
-          {isDevelopment ? (
-            <>
-              <aside className="ad ad-dev">
-                <span>Ads</span>
-                <span>displayed when you deploy</span>
-              </aside>
-              {isDisqus ? (
-                <div className="comments comments-dev">
-                  <span>Comments</span>
-                  <span>displayed when you deploy</span>
-                </div>
-              ) : null}
-            </>
-          ) : (
-            <>
-              <aside className="ad">
-                <AdSense.Google
-                  client={config.googleAdsenseClient || 'ca-pub-5001380215831339'}
-                  slot={config.googleAdsenseSlot || '5214956675'}
-                  style={{ display: 'block' }}
-                  format="auto"
-                  responsive="true"
-                />
-              </aside>
-
-              {isDisqus ? (
-                <div className="comments">
-                  <DiscussionEmbed {...disqusConfig} />
-                </div>
-              ) : null}
-            </>
-          )}
+          {isDisqus ? (
+            <div className="comments">
+              <DiscussionEmbed {...disqusConfig} />
+            </div>
+          ) : null}
         </div>
 
         {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
