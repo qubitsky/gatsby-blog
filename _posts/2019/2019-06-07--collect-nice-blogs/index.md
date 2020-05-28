@@ -4,10 +4,10 @@ date: "2019-05-25T09:14:31.853Z"
 layout: post
 draft: true
 path: "/posts/collect-nice-blog/"
-category: "其他"
 tags:
   - "Blog"
-description: "最近为了改进自己博客的外观，搜索了不少别人家的博客做参考，这里整理了一些我认为不错的。"
+keywords:
+  - "Blog"
 ---
 
 最近为了改进自己博客的外观，搜索了不少别人家的博客做参考，这里整理了一些我认为不错的。

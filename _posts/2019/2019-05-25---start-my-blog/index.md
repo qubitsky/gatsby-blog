@@ -4,10 +4,10 @@ date: "2019-05-25T09:14:31.853Z"
 layout: post
 draft: false
 path: "/posts/start-my-blog/"
-category: "其他"
+keywords:
+  - "博客"
 tags:
   - "Blog"
-description: "一直想要有个自己的博客，放到互联网上，很酷，重要的是，它是自己的，可以自由定义。"
 ---
 
 一直想要有个自己的博客，放到互联网上，很酷，重要的是，它是自己的，可以自由定义。

@@ -13,7 +13,7 @@ module.exports = {
     // If the file does not exist, it is replaced by a random image.
 
   /** Home > Bio information*/
-  comment: 'Jr. Web Front-end Developer. / javascript, react ...',
+  comment: '一个想学摄影、会弹点吉他、面向前端搬砖的程序员_(:з」∠)_',
   name: '苍微 qubitsky',
   company: '',
   location: '中国 china',

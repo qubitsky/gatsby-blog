@@ -4,11 +4,11 @@ date: "2019-05-26T09:46:02.777Z"
 layout: post
 draft: false
 path: "/posts/about-custom-domain-of-gh-pages/"
-category: "其他"
+keywords:
+  - "域名"
 tags:
   - "Github Pages"
   - "自定义域名"
-description: "在写好第一篇博文后，我就立即开始博客的部署了。"
 ---
 
 ### 为什么要讲这个
